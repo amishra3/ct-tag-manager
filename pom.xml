@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.citytechinc.cq.library</groupId>
+        <artifactId>cq-library</artifactId>
+        <version>6.2.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.citytechinc.cq.tagmanager</groupId>
+    <artifactId>ct-tag-manager</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>CQ Tag Manager</name>
+
+    <modules>
+        <module>ct-tag-manager-core</module>
+        <module>ct-tag-manager-ui</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>citytech-public</id>
+            <url>http://nexus.citytech.ctmsp.com/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>citytech-private</id>
+            <url>http://nexus.citytech.ctmsp.com/content/groups/CITYTECH-Private/</url>
+        </repository>
+    </repositories>
+
+     <pluginRepositories>
+        <pluginRepository>
+            <id>citytech-public</id>
+            <url>http://nexus.citytech.ctmsp.com/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>citytech-private</id>
+            <url>http://nexus.citytech.ctmsp.com/content/groups/CITYTECH-Private/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <properties>
+        <parent.groupId>com.citytechinc.cq.tagmanager</parent.groupId>
+        <parent.artifactId>ct-tag-manager</parent.artifactId>
+        <parent.version>1.0.0-SNAPSHOT</parent.version>
+
+        <core.artifactId>ct-tag-manager-core</core.artifactId>
+        <core.name>CQ Tag Manager - Core</core.name>
+
+        <ui.artifactId>ct-tag-manager-ui</ui.artifactId>
+        <ui.name>CQ Tag Manager - UI</ui.name>
+
+        <!-- versions -->
+        <cq.library.version>6.2.0</cq.library.version>
+
+        <!-- defaults -->
+        <package.skip>true</package.skip>
+        <osgi.bundle.status.skip>true</osgi.bundle.status.skip>
+        <cq.username>admin</cq.username>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <property>
+                    <name>local</name>
+                </property>
+            </activation>
+            <properties>
+                <package.skip>false</package.skip>
+                <osgi.bundle.status.skip>false</osgi.bundle.status.skip>
+                <cq.host>localhost</cq.host>
+                <cq.port>4502</cq.port>
+                <cq.username>admin</cq.username>
+                <cq.password>admin</cq.password>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>1.3.1</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- CQ Library -->
+            <dependency>
+                <groupId>com.citytechinc.cq.library</groupId>
+                <artifactId>cq-library-core</artifactId>
+                <version>${cq.library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.citytechinc.cq.library</groupId>
+                <artifactId>cq-library-ui</artifactId>
+                <version>${cq.library.version}</version>
+                <type>zip</type>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>

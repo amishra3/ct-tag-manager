@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/cq-library/components" />
+    <filter root="/apps/cq-library/install" />
+    <filter root="/apps/ct-tag-manager/components" />
+    <filter root="/apps/ct-tag-manager/templates" />
+    <filter root="/etc/cloudservices/ct-tag-manager">
+        <exclude pattern="/etc/cloudservices/ct-tag-manager/.*" />
+    </filter>
+</workspaceFilter>

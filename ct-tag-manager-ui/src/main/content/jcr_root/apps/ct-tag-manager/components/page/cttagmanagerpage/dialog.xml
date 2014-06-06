@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq = "http://www.day.com/jcr/cq/1.0" xmlns:jcr = "http://www.jcp.org/jcr/1.0"
+        jcr:primaryType = "cq:Dialog"
+        xtype = "dialog"
+        width = "800"
+        height = "600">
+
+    <items jcr:primaryType = "cq:WidgetCollection">
+
+        <general
+                jcr:primaryType = "cq:Widget"
+                title = "Tag Manager Config"
+                xtype = "panel">
+
+            <items jcr:primaryType = "cq:WidgetCollection">
+
+                <rules
+                        jcr:primaryType = "cq:Widget"
+                        fieldLabel = "Tags"
+                        fieldSubLabel = "List of tags to run when this tag manager configuration is used."
+                        baseName = "tag_"
+                        matchBaseName = "false"
+                        name = "./tags"
+                        prefix = "./"
+                        xtype = "multicompositefield"
+                        width = "100%" >
+
+                    <fieldConfigs jcr:primaryType = "cq:WidgetCollection">
+
+                        <name
+                                jcr:primaryType = "cq:Widget"
+                                fieldLabel = "Name"
+                                fieldDescription = "Name of this particular tag."
+                                name = "name"
+                                xtype = "textfield"
+                                width = "90%" />
+
+                        <pathRegex
+                                jcr:primaryType = "cq:Widget"
+                                fieldLabel = "Path Regex"
+                                fieldDescription = "A regular expression used to match pages that this tag should apply to."
+                                name = "pathRegex"
+                                xtype = "textfield"
+                                width = "90%" />
+
+                        <snippet
+                                jcr:primaryType = "cq:Widget"
+                                fieldLabel = "Code Snippet"
+                                fieldDescription = "HTML or JS snippet to include with this tag."
+                                name = "snippet"
+                                xtype = "textarea"
+                                width = "90%" />
+
+                    </fieldConfigs>
+
+                </rules>
+
+            </items>
+
+        </general>
+
+    </items>
+
+</jcr:root>
+

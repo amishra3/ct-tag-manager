@@ -1,0 +1,24 @@
+
+ul, pre {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+}
+
+#pathTesterLabel {
+    font-weight: bold;
+}
+
+#pathTesterNumApplicable {
+    font-style: italic;
+}
+
+.tm-tag-key {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
