@@ -15,11 +15,18 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>CQ Tag Manager</name>
+    <description>Tag management interface.</description>
 
     <modules>
         <module>ct-tag-manager-core</module>
         <module>ct-tag-manager-ui</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:git@github.com:Citytechinc/ct-tag-manager.git</connection>
+        <url>https://github.com/Citytechinc/ct-tag-manager</url>
+        <developerConnection>scm:git:git@github.com:Citytechinc/ct-tag-manager.git</developerConnection>
+    </scm>
 
     <repositories>
         <repository>
@@ -48,11 +55,10 @@
         <parent.artifactId>ct-tag-manager</parent.artifactId>
         <parent.version>1.0.0-SNAPSHOT</parent.version>
 
-        <core.artifactId>ct-tag-manager-core</core.artifactId>
-        <core.name>CQ Tag Manager - Core</core.name>
-
-        <ui.artifactId>ct-tag-manager-ui</ui.artifactId>
-        <ui.name>CQ Tag Manager - UI</ui.name>
+        <!-- cq settings -->
+        <cq.port>4502</cq.port>
+        <cq.port.publish>4502</cq.port.publish>
+        <cq.port.author>4503</cq.port.author>
 
         <!-- versions -->
         <cq.library.version>6.2.0</cq.library.version>
@@ -65,6 +71,18 @@
 
     <profiles>
         <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <crx.skip>true</crx.skip>
+                <osgi.bundle.status.skip>true</osgi.bundle.status.skip>
+                <cq.username>admin</cq.username>
+                <cq.password>admin</cq.password>
+            </properties>
+        </profile>
+        <profile>
             <id>local</id>
             <activation>
                 <property>
@@ -72,12 +90,8 @@
                 </property>
             </activation>
             <properties>
-                <package.skip>false</package.skip>
-                <osgi.bundle.status.skip>false</osgi.bundle.status.skip>
                 <cq.host>localhost</cq.host>
                 <cq.port>4502</cq.port>
-                <cq.username>admin</cq.username>
-                <cq.password>admin</cq.password>
             </properties>
         </profile>
     </profiles>

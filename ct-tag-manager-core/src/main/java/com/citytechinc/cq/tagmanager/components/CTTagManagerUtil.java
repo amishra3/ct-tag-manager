@@ -1,4 +1,4 @@
-package com.citytechinc.cq.tagmanager.components.cttagmanager;
+package com.citytechinc.cq.tagmanager.components;
 
 import com.day.cq.commons.jcr.JcrConstants;
 import org.apache.commons.lang3.StringUtils;

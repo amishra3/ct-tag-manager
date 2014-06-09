@@ -1,4 +1,4 @@
-package com.citytechinc.cq.tagmanager.components.cttagmanager;
+package com.citytechinc.cq.tagmanager.components;
 
 import com.citytechinc.cq.library.components.AbstractComponent;
 import com.citytechinc.cq.library.content.node.ComponentNode;

@@ -1,4 +1,4 @@
-package com.citytechinc.cq.tagmanager.components.cttagmanager;
+package com.citytechinc.cq.tagmanager.components;
 
 import org.apache.commons.lang.StringEscapeUtils;
 
