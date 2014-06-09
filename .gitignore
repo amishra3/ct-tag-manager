@@ -1,4 +1,11 @@
 
+# Mac
+.DS_Store
+
+# IntelliJ
 *.iml
 .idea
-.DS_Store
+
+# mvn
+target/
+
