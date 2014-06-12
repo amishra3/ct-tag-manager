@@ -92,6 +92,7 @@
             <properties>
                 <cq.host>localhost</cq.host>
                 <cq.port>4502</cq.port>
+                <package.skip>false</package.skip>
             </properties>
         </profile>
     </profiles>
