@@ -9,15 +9,15 @@
 
         <general
                 jcr:primaryType = "cq:Widget"
-                title = "Tag Manager Config"
+                title = "Tag Rules"
                 xtype = "panel">
 
             <items jcr:primaryType = "cq:WidgetCollection">
 
                 <rules
                         jcr:primaryType = "cq:Widget"
-                        fieldLabel = "Tags"
-                        fieldSubLabel = "List of tags to run when this tag manager configuration is used."
+                        fieldLabel = "Rules"
+                        fieldSubLabel = "List of rules to run when this tag configuration is used."
                         baseName = "tag_"
                         matchBaseName = "false"
                         name = "./tags"
@@ -30,7 +30,7 @@
                         <name
                                 jcr:primaryType = "cq:Widget"
                                 fieldLabel = "Name"
-                                fieldDescription = "Name of this particular tag."
+                                fieldDescription = "Name of this particular rule."
                                 name = "name"
                                 xtype = "textfield"
                                 width = "90%" />
@@ -38,7 +38,7 @@
                         <pathRegex
                                 jcr:primaryType = "cq:Widget"
                                 fieldLabel = "Path Regex"
-                                fieldDescription = "A regular expression used to match pages that this tag should apply to."
+                                fieldDescription = "A regular expression used to match pages that this rule should apply to."
                                 name = "pathRegex"
                                 xtype = "textfield"
                                 width = "90%" />
@@ -46,7 +46,7 @@
                         <snippet
                                 jcr:primaryType = "cq:Widget"
                                 fieldLabel = "Code Snippet"
-                                fieldDescription = "HTML snippet to include with this tag. Use &lt;script&gt; elements to insert Javascript."
+                                fieldDescription = "HTML snippet to include with this rule. Use &lt;script&gt; elements to insert Javascript."
                                 name = "snippet"
                                 xtype = "textarea"
                                 height="200px"
