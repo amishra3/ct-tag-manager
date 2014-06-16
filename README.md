@@ -13,7 +13,7 @@ the closing &lt;body&gt; tag:
 
     <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 
-#### Install via Maven
+### Install via Maven
 Clone the latest release and install via Maven onto your CQ instance with the following command run from the top directory of this project:
 
     mvn clean install -Plocal
