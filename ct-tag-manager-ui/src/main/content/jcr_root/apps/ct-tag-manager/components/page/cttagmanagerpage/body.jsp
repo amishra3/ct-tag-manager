@@ -1,11 +1,4 @@
-<%@page contentType="text/html"
-        pageEncoding="utf-8"
-        import="javax.jcr.Node,
-                    java.util.Iterator,
-                    com.day.cq.wcm.webservicesupport.Configuration,
-                    com.day.cq.wcm.webservicesupport.Service,
-                    org.apache.commons.lang.StringEscapeUtils,
-                    org.apache.sling.api.resource.Resource"%>
+<%@page contentType="text/html" pageEncoding="utf-8" %>
 
 <%@include file="/libs/foundation/global.jsp" %>
 

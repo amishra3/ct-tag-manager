@@ -11,6 +11,9 @@ import javax.jcr.RepositoryException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Utility class for tag manager.
+ */
 public final class CTTagManagerUtil {
 
     private static final String PROP_TAGS_PATH = "tags";

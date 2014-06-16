@@ -6,10 +6,10 @@
             cq:designPath="/etc/designs/cloudservices"
             cq:template="/libs/cq/cloudserviceconfigs/templates/servicepage"
             jcr:primaryType="cq:PageContent"
-            jcr:title="Tag Manager"
+            jcr:title="CT Tag Manager"
             sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
             componentReference="/apps/ct-tag-manager/components/content/cttagmanager"
-            inclusionRank="299"
+            inclusionRank="10000"
             ranking="49" />
 
     <test/>

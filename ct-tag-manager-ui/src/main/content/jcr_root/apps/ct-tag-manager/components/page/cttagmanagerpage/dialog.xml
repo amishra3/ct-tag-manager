@@ -46,9 +46,10 @@
                         <snippet
                                 jcr:primaryType = "cq:Widget"
                                 fieldLabel = "Code Snippet"
-                                fieldDescription = "HTML or JS snippet to include with this tag."
+                                fieldDescription = "HTML snippet to include with this tag. Use &lt;script&gt; elements to insert Javascript."
                                 name = "snippet"
                                 xtype = "textarea"
+                                height="200px"
                                 width = "90%" />
 
                     </fieldConfigs>

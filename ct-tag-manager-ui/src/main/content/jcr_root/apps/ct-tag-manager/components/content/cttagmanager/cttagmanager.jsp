@@ -7,11 +7,11 @@
 
 <ct:component className="com.citytechinc.cq.tagmanager.components.CTTagManagerRenderer" name="tm" />
 
-<!-- Begin Tag Manager Snippets -->
+<!-- Begin CT Tag Manager Snippets -->
 <c:forEach items="${tm.tags}" var="tag">
 
     <!-- ${tag.name} -->
     ${tag.snippet}
 
 </c:forEach>
-<!-- End Tag Manager Snippets -->
+<!-- End CT Tag Manager Snippets -->

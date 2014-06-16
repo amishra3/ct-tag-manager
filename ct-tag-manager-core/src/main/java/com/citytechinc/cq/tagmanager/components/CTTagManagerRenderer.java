@@ -14,11 +14,11 @@ import java.util.List;
 /**
  * Component class for rendering tags into the final page JSP.
  */
-public class CTTagManagerRenderer extends AbstractComponent {
+public class    CTTagManagerRenderer extends AbstractComponent {
 
     private static final String[] DEFAULT_CLOUD_SERVICE_CONFIG = new String[]{};
 
-    private static final String SERVICE_NAME = "cttagmanager";
+    private static final String SERVICE_NAME = "ct-tag-manager";
 
     private List<CTTagManagerTag> tags;
 

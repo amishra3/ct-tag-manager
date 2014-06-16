@@ -39,7 +39,8 @@ $(document).ready(function () {
 
         if(!isBlank) {
 
-            $pathTesterNumApplicable.html(numApplicable + " tags apply to this path.");
+            var pluralize = numApplicable === 1 ? 'tag applies' : 'tags apply';
+            $pathTesterNumApplicable.html(numApplicable + ' ' + pluralize + ' to this path.');
 
         } else {
 

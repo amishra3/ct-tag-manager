@@ -6,12 +6,12 @@
     <parent>
         <groupId>com.citytechinc.cq.tagmanager</groupId>
         <artifactId>ct-tag-manager</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ct-tag-manager-core</artifactId>
-    <name>CQ Tag Manager - Core</name>
+    <name>CT Tag Manager - Core</name>
     <packaging>bundle</packaging>
 
     <build>
