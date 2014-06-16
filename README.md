@@ -12,14 +12,14 @@ To prepare your project for CT Tag Manager usage, your global page body.jsp must
 the closing &lt;body&gt; tag:
 
     <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
-    
-### Creating a Cloud Service Configuration (CSC)
-Now that the global page component has the cloud services include, all of your pages can receive cloud service configurations.
 
 #### Install via Maven
 Clone the latest release and install via Maven onto your CQ instance with the following command run from the top directory of this project:
 
     mvn clean install -Plocal
+
+### Creating a Cloud Service Configuration (CSC)
+Now that the global page component has the cloud services include, all of your pages can receive cloud service configurations.
 
 #### Adding a New Configuration
 After Maven finishes installing the project, a tag configuration can be added by navigating to the CT Tag Manager cloud service configuration page (locally: [http://localhost:4502/etc/cloudservices/ct-tag-manager](http://localhost:4502/etc/cloudservices/ct-tag-manager)). Here, you can add a new configuration by clicking the "+" icon next to Available Configurations, which will open a dialog that asks you to give your configuration a title. Once you close that dialog, you will be sent to the configuration for the tag you just created.
