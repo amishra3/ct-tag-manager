@@ -4,9 +4,6 @@ Generic tag management Cloud Service Configuration for CQ.
 
 ## Setup
 
-### Requirements
-The generic tag manager requires that that the [CQ Library](https://github.com/Citytechinc/cq-library) is installed on your instance.
-
 ### Modifying body.jsp
 To prepare your project for CT Tag Manager usage, your global page body.jsp must include the following line just above
 the closing &lt;body&gt; tag:
