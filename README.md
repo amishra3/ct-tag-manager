@@ -2,6 +2,8 @@
 # CT Tag Manager
 Generic tag management Cloud Service Configuration for CQ.
 
+*See the [blog post](http://www.citytechinc.com/us/en/blog/2014/06/ct-tag-manager-for-CQ-AEM.html).*
+
 ## Setup
 
 ### Modifying body.jsp
